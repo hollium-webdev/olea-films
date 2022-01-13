@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    z-index: 1;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background.png');
+    background-size: cover; 
+    background-position-x: center;
+    background-position-y: 15%;
+}
+
+.overlay {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, #C4C4C4 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.9vw 4.6vw;
+}
+
+nav img {
+    width: 12.2vw;
+}
+
+nav .links {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: #535353;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 3.45vw;
+    font-weight: 500;
+    font-size: 1.15vw;
+    transition: 300ms;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a.active {
+    font-weight: 700;
+}
+
+nav a:not(.active):hover {
+    transform: scale(1.1);
+}
+
+.text {
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FCFCFC;
+}
+
+.text h1 {
+    font-size: 5.8vw;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1.5vw;
+}
+
+.text p {
+    margin: 0;
+    font-size: 1.7vw;
+    line-height: 100%;
+    font-weight: 600;
+}
